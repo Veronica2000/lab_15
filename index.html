@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>	
+	<title>Lab 15</title>
+    <script data-require="angular.js@*" data-semver="1.3.16" src="https://code.angularjs.org/1.3.16/angular.js"></script>
+    <script data-require="angular-route@*" data-semver="1.3.16" src="https://code.angularjs.org/1.3.16/angular-route.js"></script>
+    <script src="script.js"></script>
+    <script src="entrycontroller.js"></script>
+    <script src="displaycontroller.js"></script>
+    <script src="service.js"></script>
+
+</head>
+<body ng-app="madlib">
+	<div ng-controller="displaycontroller">
+		<a href="#/">Entry</a> |
+		<a href="#/madlibdisplay">Display</a>
+    </div>
+
+	<div ng-view = ""></div>
+</body>
+
+</html>
